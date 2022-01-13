@@ -1,0 +1,22 @@
+.ExpenceFilter_dropdown{
+    display: flex;
+    
+
+}
+.ExpenceFilter_dropdown label{
+    color: beige;
+    margin: 0.5rem;
+    font-weight: bold;
+}
+.ExpenceFilter_dropdown select{
+    padding: 0.5rem, 2rem;
+    margin-right: 1.5rem;
+    
+
+}
+.ExpenceFilter{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
