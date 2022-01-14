@@ -20,15 +20,15 @@ const ExpencesForm = (props) => {
     event.preventDefault()
     const ExpenceData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      ammount: enteredAmount,
       date: new Date(enteredDate),
     }
-    props.onSaveExpenceData(ExpenceData);
+    props.onSaveExpenceData(ExpenceData)
 
     //console.log(ExpenceData);
-    setEnteredTitle('');
-    setEnteredAmount('');
-    setEnteredDate('');
+    setEnteredTitle('')
+    setEnteredAmount('')
+    setEnteredDate('')
   }
 
   return (
@@ -52,13 +52,19 @@ const ExpencesForm = (props) => {
         </div>
         <div className="new-expense__control">
           <label>Date</label>
-          <input type="date" value={enteredDate} onChange={dateChangeHandler}  min="0.1" />
+          <input
+            type="date"
+            value={enteredDate}
+            onChange={dateChangeHandler}
+            min="1"
+            max="1000"
+          />
         </div>
         <div className="new-expense__actions ">
           <button type="submit">Submit</button>
         </div>
       </div>
     </form>
-  );
-};
-export default ExpencesForm
+  )
+}
+export default ExpencesForm;
