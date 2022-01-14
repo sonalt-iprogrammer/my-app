@@ -1,6 +1,7 @@
 import './App.css'
 import React, {useState} from 'react'
 import Newexpences from './Components/NewExpences/NewExpences'
+import Heading from './Components/UI/Heading'
 
 import Expences from './Components/Expences/Expences'
 const DUMMYS = [
@@ -42,7 +43,8 @@ function App() {
   };
 
   return (
-    <div>
+    <div className='main_div'>
+      <Heading/>
       <Newexpences onGetData={GetDataHandler} />
       <Expences items={initialExp} />
     </div>

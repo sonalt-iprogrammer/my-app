@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+.main_div{
+  background-color: rgb(193, 197, 193);
+  width: 75rem;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 95%;
+  margin: 1rem auto;
+  border-style: outset;
+  border-radius: 44px;
+
+}

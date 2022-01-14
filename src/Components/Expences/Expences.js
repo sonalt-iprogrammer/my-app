@@ -1,8 +1,9 @@
 import Card from '../UI/Card'
 import ExpenceFilter from './ExpenceFilter'
-import ExpenceItems from './ExpenceItems'
+
 import './Expences.css'
 import React, { useState } from 'react'
+import ExpencesList from './ExpencesList'
 
 function Expences(props) {
   const [filteredYear, setFiltered] = useState('2022')
@@ -16,7 +17,8 @@ function Expences(props) {
   
     return (expences.date.getFullYear().toString() === filteredYear);
   }
-  )
+  );
+  
 
   return (
     <Card className="Expences">
@@ -24,15 +26,8 @@ function Expences(props) {
         selected={filteredYear}
         onChangeDropdown={ChangeDropdownHandler}
       />
-      
-      {FilteredArray.map((expences) => (
-        <ExpenceItems
-          key={expences.id}
-          title={expences.title}
-          ammount={expences.ammount}
-          date={expences.date}
-        />
-      ))}
+      <ExpencesList data={FilteredArray}/>
+     
     </Card>
   )
 }

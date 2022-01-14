@@ -1,6 +1,9 @@
 .Expences{
-    margin: 5rem;
+    margin: 1rem auto; 
     background-color: black;
     padding: 1rem;
+    width: 70rem;
+    max-width: 95%;
+    
    
 }

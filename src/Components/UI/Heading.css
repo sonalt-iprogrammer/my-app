@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.heading_control{
+    background-color: black;
+   
+    display: flex;
+    flex-wrap: wrap;
+    
+    border-radius: 12px;
+    margin: 1rem auto;
+    padding: 1rem;
+    
+    
+}
+.heading_control h1{
+    float: inherit;
+    color: blanchedalmond;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.3rem;
+    text-decoration: overline;
+}
